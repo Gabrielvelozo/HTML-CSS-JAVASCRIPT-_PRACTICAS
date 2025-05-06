@@ -1,3 +1,26 @@
+
+# Practicas
+https://effortless-manatee-9dceb4.netlify.app/ (HexColor - Random)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # DOM JavaScript Cheatsheet
 
 ## 📌 Selección de Elementos
