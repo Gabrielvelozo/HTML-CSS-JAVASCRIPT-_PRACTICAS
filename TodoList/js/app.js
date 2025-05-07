@@ -9,6 +9,9 @@ let id;
 let listaTareas;
 
 
+
+
+
 //Fecha actual.
 const fechaActual =new Date;
 elementoFecha.innerHTML =fechaActual.toLocaleDateString('es-AR',{weekday:'long',month:'long',day:'numeric'});

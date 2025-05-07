@@ -22,6 +22,9 @@ html {
 h1, span, #fecha {
     color: var(--color4);
 }
+#nombre {
+    font-size: 2rem;
+}
 span, #fecha {
     font-size: 1.2rem;
     font-family: var(--fuente2);

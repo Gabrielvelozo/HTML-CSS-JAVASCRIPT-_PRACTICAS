@@ -1,6 +1,6 @@
 const contenedorColor = document.querySelector('.hex__container');
 const color = document.querySelector('#color');
-const button = document.querySelector('#btn');
+const button = document.querySelector('button');
 
 function generarColor(){
     const letras = '0123456789ABCDEF';
