@@ -1,5 +1,7 @@
 
 # Practicas 
+                    
+https://fantastic-custard-75249a.netlify.app/        --            (HTML-CSS-JS) Calcualadora V-1
 https://effortless-manatee-9dceb4.netlify.app/       --            (HexColor - Random HTML-CSS-JS)                                                                         
 https://timely-capybara-1d9f66.netlify.app/          --            (ToDoList - #2 HTML-CSS-JS)                          
 https://helpful-cactus-360c68.netlify.app/           --            (ToDoList - #1 HTML-CSS-JS)                     
@@ -11,8 +13,7 @@ https://benevolent-dieffenbachia-3259f9.netlify.app/ --            (HTML-CSS) We
 https://gabrielvelozo.netlify.app/                   --            (HTML-CSS) website Casas             
 https://my-project-4-gv.netlify.app/                 --            (HTML-CSS) Website Card                
 https://practicas-muebles-2025.netlify.app/          --            (HTML-CSS) Website Muebles              
-https://my-project-gv-2.netlify.app/                 --            (HTML-CSS) Website Auriculares                    
-
+https://my-project-gv-2.netlify.app/                 --            (HTML-CSS) Website Auriculares
 
 
 
