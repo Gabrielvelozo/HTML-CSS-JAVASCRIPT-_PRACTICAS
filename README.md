@@ -1,6 +1,6 @@
 
 # Practicas 
-                    
+https://playful-halva-13efc9.netlify.app/            --            (HTML-CSS-JS) Generador de contraseñas                                  
 https://lively-meringue-9d71b3.netlify.app/          --            (HTML-CSS-JS) Calcualadora V-1          
 https://effortless-manatee-9dceb4.netlify.app/       --            (HexColor - Random HTML-CSS-JS)                                                                         
 https://timely-capybara-1d9f66.netlify.app/          --            (ToDoList - #2 HTML-CSS-JS)                          
