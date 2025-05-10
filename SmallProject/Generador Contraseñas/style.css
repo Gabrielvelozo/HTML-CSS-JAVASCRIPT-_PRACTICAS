@@ -9,15 +9,15 @@ body {
 }
 .container {
   font-family: "Cal Sans", sans-serif;
-  width: 90%;
-  max-width: 1200px;
+  font-size: clamp(1rem, 5vw, 2rem);
   margin: 0 auto;
   display: grid;
   place-content: center;
 }
 .password__caja {
   margin-top: 10px;
-  width: 600px;
+  width: clamp(300px, 100%, 1200px);
+  max-width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -44,7 +44,6 @@ body {
   width: 100%;
   outline: 0;
   border: 0;
-  font-size: 14px;
 }
 .img {
   width: 25px;
@@ -59,7 +58,6 @@ body {
   border: 0;
   border-radius: 5px;
   cursor: pointer;
-  width: 35%;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
