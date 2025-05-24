@@ -14,30 +14,32 @@ const auto1 = new Automovil('Renault', 'Clio','Negro' ,2011, 'Gabriel');
 const auto2 = new Automovil('Peugeot', 208, 'Gris', 2021, 'Brenda');
 const auto3 = new Automovil('Toyota', 'Hylux', 'Blanco', 2017, 'Oscar');
 
-const autos = [auto1,auto2,auto3];
 
 Automovil.prototype.venderAutomovil = function(nuevoTitular){
     this.titular = nuevoTitular;
 };
 
 Automovil.prototype.verAuto = function(){
-   const verinfo = `${this.marca} : ${this.modelo}  -  ${this.anio} -- [${this.titular}]`
-   return verinfo;
-};
+  return `Marca:  ${this.marca} <br> Modelo:  ${this.modelo} <br> Año:  ${this.anio} <br>Titutar:  ${this.titular}`;
+}; 
 
-document.querySelector('.btn').addEventListener('click',()=>{
-      for (let auto of autos){
-            let li = document.createElement('li');
-            li.textContent = auto.verAuto();
-            lista1.appendChild(li);
-            li = document.createElement('li');
-            li.textContent = auto.verAuto();
-            lista2.appendChild(li);
-            li = document.createElement('li');
-            li.textContent = auto.verAuto();
-            lista3.appendChild(li);
-
-        }
+document.querySelector('.auto1').addEventListener('click',()=>{
+    lista1.innerHTML = '';
+    const li = document.createElement('li');
+    li.innerHTML = auto1.verAuto();
+    lista1.appendChild(li);
+})
+document.querySelector('.auto2').addEventListener('click',()=>{
+    lista2.innerHTML = '';
+    const li = document.createElement('li');
+    li.innerHTML = auto2.verAuto();
+    lista2.appendChild(li);
+})
+document.querySelector('.auto3').addEventListener('click',()=>{
+    lista3.innerHTML = '';
+    const li = document.createElement('li');
+    li.innerHTML = auto3.verAuto();
+    lista3.appendChild(li);
 })
 
 Automovil.prototype.encender = function(){
