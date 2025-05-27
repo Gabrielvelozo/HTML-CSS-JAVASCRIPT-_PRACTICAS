@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Buscador</title>
+</head>
+<body>
+    <main class="container">
+        <h1 class="title">Buscador de Pelicas & Series</h1>
+        <div class="buscador__box">
+            <select id="busqueda">
+                <option class="option peliculas" value='peliculas'>Peliculas</option>
+                <option class="option series" value='series'>Series</option>
+            </select>
+            <input type="text" class="input" placeholder="Ingrese para buscar..">
+            <button class="btn">Buscar</button>
+        </div>
+        <div class="contenido__box">
+            <ul id="lista"></ul>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
