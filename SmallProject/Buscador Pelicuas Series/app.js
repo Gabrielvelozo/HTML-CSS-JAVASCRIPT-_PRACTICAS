@@ -1,9 +1,10 @@
 const $select = document.querySelector('select');
 const $input = document.querySelector('.input');
-const btn = document.querySelector('.btn');
+const buscar = document.querySelector('.buscar');
 const lista = document.querySelector('#lista');
 
 let datosActules = [];
+cambiarJson('peliculas');
 
 function cambiarJson(tipo){
     const archivo = tipo === 'peliculas' ? 'peliculas.json' : 'series.json';
@@ -26,13 +27,23 @@ $select.addEventListener(('change'), evento =>{
 })
 
 //* Evento para $input
-$input.addEventListener('keydown',(e)=>{
-    // const keyPress = e.keycode;
+$input.addEventListener('keydown',(evento)=>{
+   
+    if((evento.key < 65 || evento.key > 90)  && evento.key != 8 && evento.key != 32){
+        evento.preventDefault();
+    };      
+})
+
+
+
+//* Evento para buscar
+buscar.addEventListener('click', ()=>{
     
-    // // A-Z 65-90 || a-z 97-122 || 32 espacio || 127 borrar
-    // if(!(keyPress >=65 && keyPress <=90) && !(keyPress >=97 && keyPress <=122)){
-    //     console.log(keyPress);
-    // }
-    
+    const palabraBuscar = $input.value.toLowerCase();
+    if(palabraBuscar == ''){
+        alert('Debe ingresar datos en el campo para la busqueda');
+    }
+
+    buscarContenido(palabraBuscar);
 })
 
