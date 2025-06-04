@@ -1,12 +1,19 @@
 const theme = document.querySelector('.btn');
 const change1Hs = document.querySelector('.cambio1');
 const change24Hs = document.querySelector('.cambio24');
-
 const url = 'https://min-api.cryptocompare.com/data/pricemultifull?tsyms=USD&fsyms=HEX,PLS,PLSX';
+
+
+// Eventos
+theme.addEventListener('click', cambiarTema);
+
 fetch(url)
 .then(respuesta => respuesta.json())
-.then(datos => {
-    const cripto = datos.DISPLAY;
+.then(datos => actualizarChange())
+
+
+function actualizarChange(){
+        const cripto = datos.DISPLAY;
     const pls= cripto.PLS.USD;
     const plsx = cripto.PLSX.USD;
     const hex = cripto.HEX.USD;
@@ -54,11 +61,13 @@ fetch(url)
         document.querySelector('.plsx .change').classList.add('red');
         document.querySelector('.plsx .change').classList.remove('green');
     }
-    
-    
-})
 
-// Theme
-theme.addEventListener('click', ()=>{
+}
+    
+
+
+
+// Funciones
+function cambiarTema(){
     document.body.classList.toggle('dark');
-})
+}

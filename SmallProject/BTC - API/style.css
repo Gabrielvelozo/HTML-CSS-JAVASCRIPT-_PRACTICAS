@@ -12,9 +12,12 @@
     margin: 50px;
 }
 .btc{
-    background-color: orangered;
-    width: 30px;
-    height: 30px;
+    background-image: url(/hex.png);
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     border-radius: 50%;
     display: flex;
     justify-content: center;
