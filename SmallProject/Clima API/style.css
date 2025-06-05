@@ -32,7 +32,7 @@
     height: 150px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 5px;
     align-items: center;
     font-family: var(--fuenteClima);
 }
@@ -57,6 +57,7 @@
     appearance: none;
     border-style: none;
     border-radius: 8px;
+    background-color: #ddd;
 }
 .btn{
     border-style: none;
