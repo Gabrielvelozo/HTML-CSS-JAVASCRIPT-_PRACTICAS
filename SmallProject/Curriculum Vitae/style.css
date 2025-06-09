@@ -122,10 +122,22 @@ body {
 .habilidad{
     margin: 10px 0;
     color: var(--dark-Mode);
-    font-size: 12px;
 }
 .habilidad__item{
-    list-style-type: square;
+    list-style-type: none;
+    background-color: var(--dark-Mode);
+    color: var(--ligth-Mode);
+    margin: 8px 0;
+    font-size: 16px;
+    width: 200px;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.habilidad__item:hover{
+    scale: .95;
+    transition: .3s;
 }
 
 .info__puesto{
@@ -140,7 +152,7 @@ body {
     font-family: var(--empresa);
 }
 .fecha {
-    font-size: 12px;
+    font-size: 16px;
     margin: 5px 0;
 }
 
@@ -150,7 +162,7 @@ body {
 }
 
 .info {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     margin: 5px 0;
     line-height: 1.5;
