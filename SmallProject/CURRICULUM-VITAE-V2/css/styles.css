@@ -1,0 +1,84 @@
+:root{
+    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --black: #0a0c0d;
+    --green: #348e91;
+    --greey: #f2f2f2;
+    --fondo: #f8f9fa;
+    --link:#3498db;
+}
+html{font-size: 62.5%; /* 10px = 1rem*/}
+*,*:after, *:before {
+    box-sizing: inherit;
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font);
+    color: var(--black);
+    line-height: 1.6;
+    background-color: var(--fondo);
+}
+.container {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+    border-radius: 1.2rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+/* ------------- HEADER -------------- */
+.header {
+    background-image: linear-gradient(to right, #348e91, #2e7e81, #286e71, #225f61, #1c5052);
+    margin-top: 2rem;
+    border-radius: .5rem .5rem 0 0;
+}
+.header-content {
+    color: var(--greey);
+    padding: 2rem;
+    text-align: center;
+}
+.name {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .4rem;
+}
+.age {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-weight: normal;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: .8rem;
+    align-items: center;
+    font-size: 1.5rem;
+}
+i {
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.2);
+    display: flex;
+    place-content: center;
+    cursor: pointer;
+    transition: .3s;
+}
+a {
+    text-decoration: none;
+    color: var(--greey);
+}
+a:hover {
+    color: var(--link);
+    text-decoration-line: underline;
+}
+.contact-item:hover i {
+    transform: scale(1.2);
+    transition: .3s;
+    background-color: rgba(255,255,255,0.3);
+}
