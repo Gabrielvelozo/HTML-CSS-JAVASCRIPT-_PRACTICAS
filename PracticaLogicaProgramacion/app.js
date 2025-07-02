@@ -67,11 +67,22 @@ for (let i = 1; i <= user; i++) {
 }
 console.log(`Factorial: ${factorial}`);
 */
+
 /*
 ? Determina si una palabra es palíndromo (se lee igual al revés, como "reconocer").
-let user = prompt('¿Es pálindromo?: ');
-*/
+let palabra = prompt('Ingresa una palabra, para saber si es palindromo: ');
+console.log(palabra);
+// let minuscula = palabra.toLocaleLowerCase();
+// console.log(minuscula);
+let nuevacadena = palabra.toLocaleLowerCase().split('').reverse().join('');
+console.log(nuevacadena);
 
+if (palabra.toLocaleLowerCase() === nuevacadena) {
+  console.log('ES PALINDROMO');
+} else {
+  console.log('NO ES PALINDROMO');
+}
+*/
 /*
 ? Muestra los primeros n números de la secuencia (0, 1, 1, 2, 3, 5, 8...).
 const secuencia = [0, 1, 1, 2, 3, 5, 8];
