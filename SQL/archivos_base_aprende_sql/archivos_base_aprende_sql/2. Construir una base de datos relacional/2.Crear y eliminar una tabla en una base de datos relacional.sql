@@ -1,0 +1,11 @@
+CREATE TABLE autor (
+    id_autor INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre TEXT
+);
+
+CREATE TABLE libro (
+    id_libro INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre TEXT NOT NULL,
+    ISBN TEXT NOT NULL,
+    fecha TEXT NOT NULL
+);

@@ -1,0 +1,4 @@
+CREATE TABLE autor (
+    id_autor INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre TEXT
+);

@@ -1,0 +1,3 @@
+SELECT *
+FROM cliente
+LIMIT 3 OFFSET 9
